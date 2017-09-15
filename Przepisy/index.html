@@ -1,0 +1,223 @@
+<<!DOCTYPE html>
+    <html>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="navbar navbar-color navbar-fixed-top">
+            <div class="container header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-left ">
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown">Przepisy</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dania główne</a></li>
+                                <li><a href="#">Przystawki i przekąski</a></li>
+                                <li><a href="#">Zupy</a></li>
+                                <li><a href="#">Sałatki</a></li>
+                                <li><a href="#">Napoje</a></li>
+                                <li><a href="#">Desery i ciasta</a></li>
+                                <li><a href="#">Przetwory</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown">Kaloryczność</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dania gotowe</a></li>
+                                <li><a href="#">Drób</a></li>
+                                <li><a href="#">Fast food</a></li>
+                                <li><a href="#">Grzyby</a></li>
+                                <li><a href="#">Mięsa</a></li>
+                                <li><a href="#">Nabiał</a></li>
+                                <li><a href="#">Napoje</a></li>
+                                <li><a href="#">Orzechy</a></li>
+                                <li><a href="#">Owoce</a></li>
+                                <li><a href="#">Przyprawy</a></li>
+                                <li><a href="#">Ryby</a></li>
+                                <li><a href="#">Słodycze</a></li>
+                                <li><a href="#">Tłuszcze</a></li>
+                                <li><a href="#">Warzywa</a></li>
+                                <li><a href="#">Zboża</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown">Kalkulatory</a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#">BMI</a></li>
+                                <li> <a href="#">Zapotrzebowania energetycznego</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="#" id="search"><span class="glyphicon glyphicon-search"></span> Szukaj</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" id="signup"><span class="glyphicon glyphicon-user"></span> Zarejestruj się</a></li>
+                        <li><a href="#" id="login"><span class="glyphicon glyphicon-log-in"></span> Logowanie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END of HEADER -->
+        <!-- SLIEDER -->
+        <carousel>
+            <div id="slider" class="carousel slide con">
+                <!-- Wskaźniki w postaci kropek -->
+                <ol class="carousel-indicators">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                </ol>
+                <!-- Slajdy -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="pic/1.jpg" alt="">
+                        <!-- Opis slajdu -->
+                        <div class="carousel-caption">
+                            <h3>Kurczak zapiekany w sosie własnym</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pic/2.jpeg" alt="">
+                        <!-- Opis slajdu -->
+                        <div class="carousel-caption">
+                            <h3>Pizza margerita</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pic/4.jpeg" alt="">
+                        <!-- Opis slajdu -->
+                        <div class="carousel-caption">
+                            <h3>To jest opis</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Strzałki do przewijania -->
+                <a class="left carousel-control" href="#slider" data-slide="prev">
+                     <span class="icon-prev"></span>
+                 </a>
+                <a class="right carousel-control" href="#slider" data-slide="next">
+                     <span class="icon-next"></span>
+                 </a>
+            </div>
+        </carousel>
+        <!-- END of SLIDER -->
+       
+        <!-- MODALS -->
+        <!-- LOGIN -->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal  myModal fade" id="loginModal">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-logo"><span class="glyphicon glyphicon-log-in "></span> Logowanie</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label><span class="glyphicon glyphicon-user"></span>Nazwa użytkownika</label>
+                                    <input type="text" class="form-control" id="usrname" placeholder="Wpisz nazwę użytkownika">
+                                </div>
+                                <div class="form-group">
+                                    <label for="psw"><span class="glyphicon glyphicon-pencil"></span> Hasło</label>
+                                    <input type="text" class="form-control" id="psw" placeholder="Wpisz hasło">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" checked>Zapamiętaj mnie</label>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Logowanie</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Zapomniałeś <a href="#">HASŁA?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIGN UP -->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal  myModal fade" id="signupModal">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-logo"><span class="glyphicon glyphicon-user "></span>Zarejestruj się</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label><span class="glyphicon glyphicon-user"></span>Nazwa użytkownika</label>
+                                    <input type="text" class="form-control" id="usrname" placeholder="Wpisz nazwę użytkownika">
+                                </div>
+                                <div class="form-group">
+                                    <label for="psw"><span class="glyphicon glyphicon-pencil"></span> Hasło</label>
+                                    <input type="text" class="form-control" id="psw" placeholder="Wpisz hasło">
+                                    <label for="psw"><span class="glyphicon glyphicon-pencil"></span> Powtórz hasło</label>
+                                    <input type="text" class="form-control" id="psw" placeholder="Wpisz hasło">
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Zarejestruj się</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Potrzebujesz pomocy? <a href="#">NAPISZ!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal  myModal fade" id="searchModal">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-logo"><span class="glyphicon glyphicon-search "></span>Czego szukasz?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <input type="text" class="form-control" placeholder="Szukaj...">
+                            </form>
+                            <button type="submit" class="btn btn-success btn-block "><span class="glyphicon glyphicon-thumbs-up"></span>Szukaj</button>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Potrzebujesz pomocy? <a href="#">NAPISZ!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/modals.js"></script>
+
+    </html>

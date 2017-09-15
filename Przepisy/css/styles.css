@@ -1,0 +1,226 @@
+body {
+    font-family: 'Quicksand', sans-serif
+}
+
+.navbar {
+    border: 0
+}
+
+.navbar-nav>li>a {
+    line-height: 23px
+}
+
+.navbar-color {
+    background-color: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
+    font-size: 1.2em
+}
+
+.icon-bar {
+    background-color: #fa9028
+}
+
+.glyphicon-user,
+.glyphicon-log-in,
+.glyphicon-search,
+.glyphicon-pencil,
+.glyphicon-thumbs-up {
+    color: #fde2c7
+}
+
+div>ul>li a {
+    color: #fca249!important
+}
+
+div>ul>li :hover {
+    transition: .5s;
+    color: #fff!important;
+    background-color: #fca249!important;
+    font-size: 1.25em
+}
+
+.dropdown-menu {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 0
+}
+
+.dropdown-menu a {
+    font-size: 1.1em;
+    padding: 1px;
+    border-bottom: 1px solid white;
+    color: #fff!important;
+    background-color: #fca249
+}
+
+.dropdown-menu a:hover {
+    color: #fca249!important;
+    background-color: #fff!important
+}
+
+.open>a {
+    background-color: transparent!important
+}
+
+.carousel-indicators>li,
+.carousel-indicators>li.active {
+    width: 11vw;
+    height: 1.5vw;
+    border-radius: 0;
+    border: solid 1px #fff;
+    text-indent: 0;
+    background-color: transparent
+}
+
+.carousel-indicators {
+    bottom: -5px
+}
+
+.carousel-indicators li.active {
+    background: #ffbc77
+}
+
+.carousel-inner {
+    height: 45vw
+}
+
+.carousel-inner .item>img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px
+}
+
+.carousel-caption {
+    position: absolute;
+    text-shadow: none
+}
+
+.carousel-caption>h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    top: 44vw;
+    position: relative;
+    background-color: #ffbc77;
+    color: #fff!important;
+    letter-spacing: .5vw;
+    box-shadow: 0;
+    padding: 2vw;
+    animation: opac 2s;
+    margin: auto;
+    font-size: 4vw
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none
+}
+
+body::-webkit-scrollbar {
+    width: 1em
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fca249
+}
+
+.logo {
+    color: #fff!important;
+    background-color: #ffbc77!important;
+    font-size: 3em!important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 2vw 15vw;
+    top: 20px;
+    position: relative;
+    text-align: center;
+    margin: 50px
+}
+
+a:hover,
+a:focus {
+    color: #fa9028!important;
+    text-decoration: none
+}
+
+.thumbnail {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border: 1px solid #fde2c7;
+    text-align: center;
+    transition: .15s;
+    opacity: 1
+}
+
+.thumbnail:hover,
+.thumbnail:focus {
+    border: 1px solid #ffbc77!important;
+    opacity: .7
+}
+
+.article {
+    border: 10px solid black;
+    max-width: 1600px
+}
+
+.article img {
+    max-width: 400px
+}
+
+.myModal .modal-header {
+    background-color: #ffbc77
+}
+
+.myModal .modal-logo {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif
+}
+
+.myModal label {
+    color: #fca249
+}
+
+.myModal button {
+    background-color: #ffbc77;
+    border: 0
+}
+
+.myModal button:hover,
+.myModal button:focus {
+    background-color: #fca249!important;
+    font-size: 1em;
+}
+
+.myModal a:focus,
+.myModal a:hover {
+    text-decoration: underline
+}
+
+.modal-header>button.close {
+    margin-top: -2px;
+    font-size: 3em;
+    color: white;
+    opacity: 1;
+}
+
+.modal-header>button.close:hover,
+.modal-header>button.close:focus {
+    background-color: #ffbc77!important;
+    opacity: 0.5;
+}
+
+.modal-backdrop.in {
+  opacity: 0.90;
+ 
+.
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

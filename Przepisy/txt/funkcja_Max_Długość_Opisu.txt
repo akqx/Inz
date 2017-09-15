@@ -1,0 +1,47 @@
+
+<<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<html>
+<head>
+                <title></title>
+</head>
+<body>
+
+
+
+
+<textarea id="textarea" rows="7" cols="25" maxlength="55"></textarea>
+<div id="div" >Dodaj opis</div>
+
+<script type="text/javascript">
+var count=55;
+
+$('textarea').bind('focusin keyup', function(){
+
+var aktualni=$('#textarea').val().length;
+var wynik=count-aktualni;
+
+$('div').html("zosta³o "+wynik+' znaków');
+}).focusout(function(){
+
+var count=55;
+var aktualni=$('#textarea').val().length;
+var wynik=count-aktualni;
+
+if(wynik==0){
+$('div').text('Dodaj');}
+else 
+$('div').text('Dodaj opis');
+});
+
+
+</script>
+<style type="text/css">
+
+
+</style>
+
+</body>
+</html>
+
+

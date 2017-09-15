@@ -1,0 +1,245 @@
+@import "colors";
+
+body {
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    border: none;
+}
+
+
+.navbar-nav>li>a {
+    line-height: 23px;
+}
+
+.navbar-color {
+    background-color: @white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+}
+
+.icon-bar {
+    background-color: @darkPeach;
+}
+
+.glyphicon-user,
+.glyphicon-log-in,
+.glyphicon-search,
+.glyphicon-pencil {
+    color: @peach;
+}
+
+div>ul>li {
+    a {
+        color: @orangeNormal!important;
+    }
+
+     :hover,
+    {
+        transition: 0.5s;
+        color: @white!important;
+        background-color: @orangeNormal!important;
+        font-size: 1.25em;
+    }
+}
+
+.dropdown-menu {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 0;
+    a {
+        font-size: 1.1em;
+        padding: 1px;
+        border-bottom: 1px solid white;
+        color: @white!important;
+        background-color: @orangeNormal;
+    }
+    a:hover {
+        color: @orangeNormal!important;
+        background-color: @white!important;
+    }
+}
+
+.open>a {
+    background-color: transparent!important;
+}
+
+
+.carousel-indicators>li,
+.carousel-indicators>li.active {
+    width: 11vw;
+    height: 1.5vw;
+    border-radius: 0;
+    border: solid 1px @white;
+    text-indent: 0;
+    background-color: transparent;
+}
+
+
+
+.carousel-indicators {
+    bottom: -5px;
+    li,
+    li.activer {}
+    li.active {
+        background: @morel;
+    }
+}
+
+
+
+.carousel-inner {
+    height: 45vw;
+
+    .item>img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        margin-top: 50px;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    text-shadow: none;
+}
+
+.carousel-caption>h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    top: 44vw;
+    position: relative;
+    background-color: @morel ;
+    color: @white !important;
+    letter-spacing: 0.5vw;
+    box-shadow: 0px 0px 0px 0;
+    padding: 2vw;
+    animation: opac 2s;
+    margin: auto;
+    font-size: 4vw;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: @orangeNormal;
+}
+
+
+
+.logo {
+    color: @white !important;
+    background-color: @morel !important;
+    font-size: 3em!important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 2vw 15vw;
+    top: 20px;
+    position: relative;
+    text-align: center;
+    margin: 50px;
+}
+
+a:hover,
+a:focus {
+    color: @darkPeach!important;
+    text-decoration: none;
+}
+
+.thumbnail {
+    font-family: 'Open Sans Condensed', sans-serif;
+    border: 1px solid @peach;
+    text-align: center;
+    transition: 0.15s;
+    opacity: 1;
+}
+
+.thumbnail:hover,
+.thumbnail:focus {
+    border: 1px solid @morel!important;
+    opacity: 0.7;
+}
+
+
+.article {
+    border: 10px solid black;
+    max-width: 1600px;
+    img {
+        max-width: 400px
+    }
+}
+
+
+
+
+
+.myModal {
+    .modal-header {
+        background-color: @morel;
+    }
+
+
+    .modal-logo {
+        text-align: center;
+        color: @white;
+        font-size: 2em;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    label {
+        color: @orangeNormal;
+    }
+
+    button {
+        background-color: @morel;
+        border: none;
+    }
+}
+
+.modal-body {
+    button:hover,
+    button:focus {
+        background-color: @darkOrange;
+        font-size: 1em;
+    }
+
+    a:focus,
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.modal-header {
+    button.close {
+        margin-top: -2px;
+        font-size: 3em;
+        color: white;
+        opacity: 1;
+        color: white;
+    }
+
+    .myModal button:hover,
+    .myModal button:focus {
+        background-color: @white!important;
+    }
+}

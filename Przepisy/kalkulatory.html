@@ -1,0 +1,164 @@
+<<!DOCTYPE html>
+    <html>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/restpages.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/paralax.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="navbar navbar-color navbar-fixed-top">
+            <div class="container header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-left ">
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown">Przepisy</a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#">Dania główne</a></li>
+                                <li> <a href="#">Przystawki i przekąski</a></li>
+                                <li> <a href="#">Zupy</a></li>
+                                <li> <a href="#">Sałatki</a></li>
+                                <li> <a href="#">Napoje</a></li>
+                                <li> <a href="#">Desery i ciasta</a></li>
+                                <li> <a href="#">Przetwory</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown">Kaloryczność</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dania gotowe</a></li>
+                                <li> <a href="#">Drób</a></li>
+                                <li><a href="#">Fast food</a></li>
+                                <li><a href="#">Grzyby</a></li>
+                                <li><a href="#">Mięsa</a></li>
+                                <li><a href="#">Nabiał</a></li>
+                                <li><a href="#">Napoje</a></li>
+                                <li><a href="#">Orzechy</a></li>
+                                <li><a href="#">Owoce</a></li>
+                                <li><a href="#">Przyprawy</a></li>
+                                <li><a href="#">Ryby</a></li>
+                                <li><a href="#">Słodycze</a></li>
+                                <li><a href="#">Tłuszcze</a></li>
+                                <li><a href="#">Warzywa</a></li>
+                                <li><a href="#">Zboża</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown">Kalkulatory</a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#">BMI</a></li>
+                                <li> <a href="#">Zapotrzebowania energetycznego</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Szukaj...</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Zarejestruj się</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logowanie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END of HEADER -->
+        <div>
+            <div class="logo">KALKULATORY</div>
+        </div>
+        <!-- BMI -->
+        <div class="container bmi">
+            <div class="row">
+                <div class=" col-lg-4 a1">1</div>
+                <div class="col-lg-3 a4">
+                    <strong>Co to jest BMI?</strong>
+                    <br>
+                    <br> BMI jest to wskaźnik masy ciała(ang. Body Mass Index). Oliczając BMI pomożemy określić czy Twoja waga jest prawidłowa. Prawidłowa masa ciała powinna mieścić się między 18,5 a 25. BMI to iloraz masy ciała(liczony w kg) oraz wzrostu(podniesionego do kwadratu).
+                </div>
+                <div class=" col-lg-5 a2">
+                    <strong>Płeć:</strong>
+                    <div class="radio">
+                        <label class="radio-inline">
+                            <input type="radio" name="radio1" checked>mężczyzna
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="radio-inline">
+                            <input type="radio" name="radio1">kobieta
+                        </label>
+                    </div>
+                    <strong>Masa ciała(kg):</strong>
+                    <input type="text" class="form-control" placeholder="Ile ważysz?" id="bodyWeight">
+                    <strong>Wzrost(cm):</strong>
+                    <input type="text" class="form-control" placeholder="Ile masz wzrostu?" id="bodyHight">
+                    <button type="submit" class="btn bodySubmit">OBLICZ</button>
+                </div>
+            </div>
+        </div>
+        <!-- END of BMI -->
+        <!-- START of ENERGY CALCULATOR -->
+        <div class="container energy">
+            <div class="row">
+                <div class=" col-lg-4 a2">
+                    <strong>Płeć:</strong>
+                    <div class="radio">
+                        <label class="radio-inline">
+                            <input type="radio" name="radio2" checked>mężczyzna
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="radio-inline">
+                            <input type="radio" name="radio2">kobieta
+                        </label>
+                    </div>
+                    <strong>Wiek:</strong>
+                    <input type="text" class="form-control" id="age" placeholder="Ile masz lat?">
+                    <strong>Masa ciała(kg):</strong>
+                    <input type="text" class="form-control" placeholder="Ile ważysz?" id="bodyWeight">
+                    <strong>Wzrost(cm):</strong>
+                    <input type="text" class="form-control" placeholder="Ile masz wzrostu?" id="bodyHight">
+                    <strong>Określ swoją aktywność fizyczną:</strong>
+                    <select class="form-control">
+                        <option>Określ aktywność fizyczną:</option>
+                        <option>brak akytwnosci fizycznej(praca siedząca)</option>
+                        <option>bardzo mała(praca lekka, raz w tygodnu ćwiczenia)</option>
+                        <option>średnia(3/4 razy w tygodniu ćwiczenia ficzyczne)</option>
+                        <option>duża(ponad 4 razy w tygodniu ćwiczenia ficzyczne)</option>
+                        <option>wysoka(praca fizyczna, bardzo cieżkie treningi)</option>
+                    </select>
+                    <button type="submit" class="btn bodySubmit">OBLICZ</button>
+                </div>
+                <div class="col-lg-3 a4">
+                    <strong>Zapotrzebowanie energetyczne...</strong>
+                    <br>
+                    <br>wyliczmy Ci z kalkulatora kalorii. Liczbę kalorii dostosujemy do Twojej aktywności fizycznej. Nie tylko, powiemy Ci ile spalasz dziennie kalorii, ale także ile spala Twój organiz w pozycji spoczynkowej. Te informacje ułatwią Ci wybranie diety. Proponujemy:
+                    <br>-aby schudnać, odejmij około 300-500 kalorii od zapotrzebiwania energetycznego,
+                    <br>-aby przytyć dodaj 300-500 kalorii do zapotrzebowania energetycznego
+                    <br>-natomiast, jeżeli chcesz zachować swoją mase ciała, jedź tyle kalorii ile wynosi Twoje zapotrzebiwanie energetyczne
+                </div>
+                <div class=" col-lg-5 a1">1</div>
+            </div>
+        </div>
+        <!-- END OF ENERGY CALCUALTOR -->
+
+        <body>
+    </html>
