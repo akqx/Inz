@@ -1,0 +1,14 @@
+  body {
+      background: #e8e8e9;
+       font-family: 'Quicksand', sans-serif;
+  }
+
+
+a{
+    color: orange !important;
+}
+
+
+a:hover{
+    color: pink !important;
+}
