@@ -1,13 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import Routes from './Routes';
-import {Router, Route, IndexRoute, browserHistory} from 'react-router'
-import registerServiceWorker from './registerServiceWorker';
+import { browserHistory} from 'react-router'
 import './css/restpages.css';
 import './css/styles.css';
+import {Provider} from 'react-redux';
+import thunk from 'redux-thunk';
+import {createStore, applyMiddleware, compose} from 'redux'
+import rootReducer from './reducers/rootReducer'
+import setAuth from './Auth/setAuth.js'
+import { setCurrentUser } from './Login/loginActions.js';
+
+const store = createStore(
+  rootReducer,
+  compose(
+    applyMiddleware(thunk),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+  )
+);
+
+if(localStorage.token){
+setAuth(localStorage.token);
+store.dispatch(setCurrentUser(localStorage.token));
+}
 
 
-ReactDOM.render(<Routes history={browserHistory} />, document.getElementById('root'));
-registerServiceWorker();
+render(
+<Provider store={store}>
+	<Routes history={browserHistory}/>
+</Provider>, document.getElementById('root'));
+
 
 

@@ -1,2 +1,13 @@
-.logo1{color:#fff!important;background-color:#fde2c7!important;font-size:3em!important;font-family:'Open Sans Condensed',sans-serif;padding:2vw 15vw;top:30px;top:20px;position:relative;text-align:center}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+.parallax {
+  /* The image used */
+  background-image: url("pic/food/tluszcze.jpg");
+  /* Set a specific height */
+  height: 500px;
+  background-color: red;
+  width: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

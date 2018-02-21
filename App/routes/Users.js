@@ -1,19 +1,22 @@
+var mysql      = require('mysql');
 var express = require('express');
-var router = express.Router();
+ var app = express();
 
-router.get('/', function(req, res, next) {
-    pool.getConnection(function(err, connection) {
-   var name = req.params.name;
-   connection.query("SELECT * FROM user", function(err, rows) {
+
+//wszyscy uzytkownicy na localhost:3001/users/username
+app.get('/username', function(req, res, next) {
+   connection.query("SELECT username FROM user ORDER BY username ASC", function(err, rows) {
+               if (!err && rows.length > 0) {
                 res.json(rows);
+            } else {
+                res.json([]);
+            }
           
         });
     });
-});
 
-
-router.get('/:username', function(req, res, next) {
-    pool.getConnection(function(err, connection) {
+//konkretny user na localhost:3001/users/nazwauzytkownika
+app.get('/:username', function(req, res, next) {
         var username = req.params.username;
         connection.query("SELECT * FROM user WHERE username='" + username + "' LIMIT 1", function(err, rows) {
             if (!err && rows.length > 0) {
@@ -23,5 +26,19 @@ router.get('/:username', function(req, res, next) {
             }
         });
     });
-});
-module.exports = router;
+
+
+//wszsyscy userzy na localhost:3001/users
+app.get('/', function(req, res, next) {
+   connection.query("SELECT * FROM user where id", function(err, rows) {
+               if (!err && rows.length > 0) {
+                res.json(rows);
+            } else {
+                res.json([]);
+            }
+          
+        });
+    });
+
+
+module.exports = app;
